@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manmitha Karam - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>#toast-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 9999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toast.success,
+.toast.error {
+  display: block;
+  opacity: 1;
+}
+
+.toast.success {
+  background-color: #4ade80; /* Green */
+  color: #000;
+}
+
+.toast.error {
+  background-color: #f87171; /* Red */
+  color: #000;
+}
+</style>
+</head>
+<body>
+ <nav>
+  <a href="index.html" class="logo">MK</a>
+  <div class="hamburger" id="hamburger">
+    &#9776;  <!-- hamburger icon (3 lines) -->
+  </div>
+  <div class="nav-right">
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about-education">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/MANMITHA_KARAM_RESUME.pdf" target="_blank" class="resume-btn">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header>
+    <div class="intro">
+      <div class="badge">Available for new opportunities</div>
+      <h1><b>Hi, I'm <span>Manmitha<br>Karam</span></b></h1>
+      <p>A Computer Science and Engineering student passionate about tech that makes a difference.</p>
+      <div class="tags">
+        <div><i class="fas fa-code"></i> Machine Learning</div>
+        <div><i class="fas fa-laptop-code"></i> Web Development</div>
+        <div><i class="fas fa-lightbulb"></i> Problem Solver</div>
+      </div>
+      <div class="buttons">
+        <a href="#projects" class="view-projects">View Projects</a>
+        <a href="#contact" class="contact-me">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="https://i.postimg.cc/KjfcFNXT/profile.jpg" alt="Manmitha Karam">
+      <p>CS Student</p>
+    </div>
+  </header>
+
+  <section id="about-education" class="about-education">
+    <div class="about-box">
+    <h2>About Me</h2>
+    <p>I’m Manmitha Karam, a Computer Science and Engineering student driven by a passion for using technology to solve real-world problems. I enjoy building impactful projects, especially in machine learning and web development.</p><p> I'm a firm believer in continuous learning, adaptability, and teamwork—values that guide my growth both personally and professionally. My motivation comes from the desire to contribute meaningfully to innovative solutions that make a difference.</p>
+    <div class="qualities">
+        <span>Continuous Learning</span>
+        <span>Adaptability</span>
+        <span>Teamwork</span>
+        <span>Problem Solving</span>
+    </div>
+    </div>
+    <div class="education-box">
+        <h2>Education</h2>
+        <div class="education-entry">
+          <strong>BTech in Computer Science and Engineering</strong><br>
+          <p>Gayatri Vidya Parishad College Of Engineering (A), Visakhapatnam</p><br>
+          <span class="highlight"> 2021 – 2025</span> | <span class="highlight-cgpa">CGPA: 8.25</span>
+        </div>
+        <hr>
+        <div class="education-entry">
+          <strong>Intermediate (MPC)</strong><br>
+          <p>Sasi New Gen Junior College</p><br>
+          <span class="highlight">2019 – 2021</span>| <span class="highlight-cgpa">Percentage: 95.9%</span>
+        </div>
+        <hr>
+        <div class="education-entry">
+          <strong>SSC</strong><br>
+          <p>Vidya Vikas EM High School</p><br>
+          <span class="highlight">2019</span> | <span class="highlight-cgpa">GPA: 9.8</span>
+        </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-row">
+        <div class="skill-card">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <div class="card-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Frameworks</h3>
+            <ul>
+                <li>Flask</li>
+                <li>TensorFlow</li>
+                <li>Git</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <div class="card-icon"><i class="fas fa-globe"></i></div>
+            <h3>Domains</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Web Development</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <div class="card-icon"><i class="fas fa-book"></i></div>
+            <h3>Coursework</h3>
+            <ul>
+                <li>DBMS</li>
+                <li>Computer Networks</li>
+                <li>OOP</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-row">
+        <div class="project-box">
+        <h3 class="project-title">Emotion Detection Using Facial Expressions</h3>
+        <p class="project-description">
+          An ML model was developed to detect emotions from facial expressions using a Facial Emotion Recognition (FER) dataset. A Flask-based web application was created to allow users to interact with this model seamlessly.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-pill">CNN</span>
+          <span class="tech-pill">TensorFlow</span>
+          <span class="tech-pill">Flask</span>
+          <span class="tech-pill">HTML/CSS</span>
+          <span class="tech-pill">Bootstrap</span>
+        </div>
+        <a href="https://github.com/manmithakaram/emotiondetection" target="_blank" class="code-link">
+          <i class="fab fa-github"></i> Code
+          </a>
+      </div>
+    <div class="project-box">
+      <h3 class="project-title">Movie Recommendation System</h3>
+      <p class="project-description">
+        Suggests similar films based on user-defined criteria, such as the title of a movie. Implemented using Machine Learning algorithms and a robust movie dataset.
+      </p>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">ML</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Numpy</span>
+      </div>
+      <a href="https://github.com/manmithakaram/movie_recommendation" target="_blank" class="code-link">
+        <i class="fab fa-github"></i> Code
+      </a>
+    </div>
+    </div>
+    <div class="project-row">
+    <div class="project-box">
+      <h3 class="project-title">Recipe Finder</h3>
+      <p class="project-description">
+        A recipe discovery application that enables users to input their available ingredients. It utilizes a recipe dataset to retrieve matching recipes and provides detailed step-by-step instructions.
+      </p>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">ML</span>
+        <span class="tech-pill">Flask</span>
+      </div>
+      <a href="https://github.com/manmithakaram/recipe_finder" target="_blank" class="code-link">
+        <i class="fab fa-github"></i> Code
+      </a>
+    </div>
+    <div class="project-box">
+      <h3 class="project-title">Personal Portfolio</h3>
+      <p class="project-description">
+        A responsive personal portfolio website developed to showcase my projects and skills.
+      </p>
+      <div class="tech-stack">
+        <span class="tech-pill">HTML</span>
+        <span class="tech-pill">CSS</span>
+        <span class="tech-pill">JavaScript</span>
+      </div>
+      <a href="https://github.com/manmithakaram/portfolio_website" target="_blank" class="code-link">
+        <i class="fab fa-github"></i> Code
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+  <h2>Get In Touch</h2>
+  <div class="contact-wrapper">
+    <div class="left-section">
+      <div class="contact-description">
+        <p>Feel free to reach out if you're looking for a collaborator, have a question, or just want to connect.</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div class="info">
+            <p>Phone</p>
+            <a href="tel:+917816091244">+91 7816091244</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div class="info">
+            <p>Email</p>
+            <a href="mailto:manmithak07@gmail.com">manmithak07@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fab fa-linkedin"></i></div>
+          <div class="info">
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/manmitha-karam-b12815281" target="_blank">manmitha-karam-b12815281</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fab fa-github"></i></div>
+          <div class="info">
+            <p>GitHub</p>
+            <a href="https://github.com/manmithakaram" target="_blank">manmithakaram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <form class="contact-form" id="contact-form">
+        <label>Name</label>
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <label>Email</label>
+        <input type="email" name="from_email" placeholder="Your Email" required />
+        <label>Message</label>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <!-- Toast popup -->
+  <div id="toast-popup"></div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <a href="index.html" class="logo">MK</a>
+    </div>
+
+    <div class="footer-center">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-education">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <a href="https://github.com/manmithakaram" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/manmitha-karam-b12815281" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:manmithak07@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Manmitha Karam. All rights reserved.</p>
+  </div>
+</footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>                        
+</body>
+</html>
